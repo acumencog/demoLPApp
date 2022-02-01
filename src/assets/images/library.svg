@@ -1,0 +1,25 @@
+<svg id="Group_1265" data-name="Group 1265" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27" height="19" viewBox="0 0 27 19">
+  <defs>
+    <filter id="Rectangle_249" x="-9" y="-6" width="45" height="37" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-color="#00001f"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-path">
+      <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Rectangle_249)">
+        <rect id="Rectangle_249-2" data-name="Rectangle 249" width="27" height="19" fill="#fff"/>
+      </g>
+    </clipPath>
+  </defs>
+  <g id="Group_1095" data-name="Group 1095">
+    <g id="Mask_Group_490" data-name="Mask Group 490" clip-path="url(#clip-path)">
+      <g id="library" transform="translate(4)">
+        <path id="Path_1420" data-name="Path 1420" d="M19,0H4.472V2.236H2.236V4.472H0V19H14.528V16.764h2.236V14.528H19ZM13.415,17.887H1.113V5.585h12.3Zm2.236-2.236H14.528V4.472H3.349V3.349h12.3Zm2.236-2.236H16.764V2.236H5.585V1.113h12.3Z" fill="#fff"/>
+        <path id="Path_1421" data-name="Path 1421" d="M7.264,13.41a1.676,1.676,0,0,0,1.675-1.675V9.5a1.675,1.675,0,0,0-3.349,0v2.236A1.676,1.676,0,0,0,7.264,13.41ZM6.7,9.5a.561.561,0,0,1,1.123,0v2.236a.561.561,0,0,1-1.123,0Z" fill="#fff"/>
+        <path id="Path_1422" data-name="Path 1422" d="M7.264,15.646a3.915,3.915,0,0,0,3.91-3.91H10.061a2.8,2.8,0,0,1-5.594,0H3.354A3.915,3.915,0,0,0,7.264,15.646Z" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

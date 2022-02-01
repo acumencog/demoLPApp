@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "465054101319",
+    "project_id": "lifepoints-b0548",
+    "storage_bucket": "lifepoints-b0548.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:465054101319:android:72ea83d2e78a8a8b206662",
+        "android_client_info": {
+          "package_name": "com.lifepoints.lifepointsapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "465054101319-nkaocj1e4h5tcclhoctvmi4b0o6kd8fg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCOlpuifZqFllhRqXsj21azooiSohyGt0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "465054101319-nkaocj1e4h5tcclhoctvmi4b0o6kd8fg.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "465054101319-0dgn6rheoffdspjokpbrcv9ock4t4go6.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.lifepointsug.lifepoints",
+                "app_store_id": "1534493147"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

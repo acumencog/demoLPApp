@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19" height="17" viewBox="0 0 19 17">
+  <defs>
+    <filter id="Rectangle_249" x="-9" y="-6" width="37" height="35" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-color="#00001f"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-path">
+      <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Rectangle_249)">
+        <rect id="Rectangle_249-2" data-name="Rectangle 249" width="19" height="17" rx="1" transform="translate(104.18 426)" fill="#fff"/>
+      </g>
+    </clipPath>
+  </defs>
+  <g id="Group_1266" data-name="Group 1266" transform="translate(-104.178 -426)">
+    <g id="Mask_Group_489" data-name="Mask Group 489" clip-path="url(#clip-path)">
+      <g id="camera_1_" data-name="camera (1)" transform="translate(104.178 425)">
+        <g id="Group_1262" data-name="Group 1262">
+          <g id="Group_1261" data-name="Group 1261">
+            <circle id="Ellipse_340" data-name="Ellipse 340" cx="3.958" cy="3.958" r="3.958" transform="translate(5.542 6.333)" fill="#fff"/>
+            <path id="Path_1419" data-name="Path 1419" d="M17.417,3.958H14.906a1.181,1.181,0,0,1-.84-.348L12.619,2.163a1.967,1.967,0,0,0-1.4-.58H7.781a1.967,1.967,0,0,0-1.4.58L4.934,3.61a1.181,1.181,0,0,1-.84.348H1.583A1.585,1.585,0,0,0,0,5.542V15.833a1.585,1.585,0,0,0,1.583,1.583H17.417A1.585,1.585,0,0,0,19,15.833V5.542A1.585,1.585,0,0,0,17.417,3.958ZM9.5,15.042a4.75,4.75,0,1,1,4.75-4.75A4.755,4.755,0,0,1,9.5,15.042Zm6.333-7.125a.792.792,0,1,1,.792-.792A.793.793,0,0,1,15.833,7.917Z" fill="#fff"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

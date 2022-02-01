@@ -25,7 +25,11 @@ ProfileViewContainer.navigationOptions = ({navigation}) => {
   };
 };
 
-//Dashboard navigator
+/**
+ * This method will create the stack navigator at the app level
+ * Default screen of dasbhoard will be shown which should be configured
+ * in the TabNavigator Screen
+ */
 const DashboardStackNavigator = createSharedElementStackNavigator(
   {
     [ROUTES.DASHBORD.id]: {

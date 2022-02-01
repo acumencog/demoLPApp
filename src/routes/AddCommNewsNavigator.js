@@ -19,7 +19,7 @@ ProfileViewContainer.navigationOptions = ({navigation}) => {
   };
 };
 
-//add routes
+//Create a Stack Navigator for the comm news
 const AddCommNewsNavigator = createStackNavigator(
   {
     [ROUTES.PICK_IMAGE.id]: {

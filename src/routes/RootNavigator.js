@@ -3,6 +3,10 @@ import {ROUTES} from './Routes';
 import AuthNavigator from './AuthNavigator';
 import AppNavigator from './AppNavigator';
 
+/**
+ * This method will create the root navigator with two child navigations
+ * AuthNavigator and AppNavigator which will decide which one to show to the user
+ */
 const RootNavigator = createSwitchNavigator(
   {
     [ROUTES.AUTH_NAVIGATOR.id]: {

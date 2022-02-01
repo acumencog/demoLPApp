@@ -3,7 +3,10 @@ import {ROUTES} from './Routes';
 import LoginView from '../features/auth/views/LoginView';
 import RegistrationContainer from '../features/auth/views/RegistrationContainer';
 
-// authnavigator
+/**
+ * This method will create the stack navigator at the app level
+ * Default screen of login view will be shown and decide weather to show it or not
+ */
 const AuthNavigator = createStackNavigator(
   {
     [ROUTES.AUTH_LOGIN.id]: {

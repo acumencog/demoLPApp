@@ -19,7 +19,10 @@ ProfileViewContainer.navigationOptions = ({navigation}) => {
   };
 };
 
-//tabnavigator screens in ShopNavigator
+/**
+ * This method will create the stack navigator at the app level
+ * Default screen Shop will be shown in this navigator
+ */
 const ShopNavigator = createStackNavigator(
   {
     [ROUTES.LEADERBOARD.id]: {

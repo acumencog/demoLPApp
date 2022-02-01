@@ -19,6 +19,10 @@ ProfileViewContainer.navigationOptions = ({navigation}) => {
   };
 };
 
+/**
+ * This method will create the stack navigator at the app level
+ * Default screen of Shop will be shown which should be configured
+ */
 const ShopNavigator = createStackNavigator(
   {
     [ROUTES.SHOP_HOME.id]: {

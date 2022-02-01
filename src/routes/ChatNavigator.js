@@ -15,7 +15,10 @@ ProfileViewContainer.navigationOptions = ({navigation}) => {
   };
 };
 
-//tabnavigator screen in chatnavigation
+/**
+ * This method will create the stack navigator at the app level
+ * to show the chat component with RecentChat shown as the default screen
+ */
 const ChatNavigator = createStackNavigator(
   {
     [ROUTES.CHAT.id]: {

@@ -1,13 +1,13 @@
-/* eslint-disable react-hooks/exhaustive-deps */
-/* eslint-disable prettier/prettier */
-import React, {useRef} from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import {View, StyleSheet, Text} from 'react-native';
-
 import COLORS from '../../../statics/colors';
-
 import {withNavigationFocus} from 'react-navigation';
 
+/**
+ * This function is used  for picking the image from the gallery
+ * @return the image
+ */
 const PickImage = props => {
   return (
     <View style={styles.container}>

@@ -7,6 +7,10 @@ import LeaderboardReducer from '../features/leaderboard/redux/LeaderboardReducer
 
 import DashboardReducer from '../features/dashboard/redux/DashboardReducer';
 
+/**
+ * This method is used to create the root reducer which will have the combined information of
+ * all the reducers in it like ProfileReducer, LeaderboardReducer, DashboardReducer
+ */
 const rootReducer = combineReducers({
   ProfileReducer,
   LeaderboardReducer,

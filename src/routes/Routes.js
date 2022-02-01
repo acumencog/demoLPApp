@@ -430,7 +430,7 @@ const ROUTES = {
   },
 };
 
-// used for logging
+// Used for logging
 const ROUTES_NAME_MAPPING = {
   dashboardStackNavigator: 'Dashboard',
   qr: 'QR',

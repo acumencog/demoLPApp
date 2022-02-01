@@ -11,7 +11,10 @@ import LPLogger from '../utils/LPLogger';
 import {LPCustomIcon} from '../components';
 import ChatNavigator from './ChatNavigator';
 
-//Dashborad Tab
+/**
+ * This method will create the bottomTabNavigator that will allow user to
+ * travel between the different tabs like Dashboard, Chat, Add Comm news Shop
+ */
 const TabNavigator = createBottomTabNavigator(
   {
     [ROUTES.DASHBORD_STACK_NAVIGATOR.id]: {

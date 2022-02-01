@@ -1,8 +1,6 @@
 const axios = require('axios');
 import Toast from 'react-native-root-toast';
 import Config from 'react-native-config';
-
-// import store from '../store/configureStore';
 import {queryStringGenerator} from '../utils/CommonUtils';
 import {RESPONSE_STATUS, TOAST_DEFAULT_STYLE} from '../statics/Enums';
 import LPLogger from '../utils/LPLogger';
@@ -10,9 +8,7 @@ import API_URLS from './apiUrls';
 import {API_STATICS} from '../features/auth/statics/AuthStatics';
 
 const MOCK_DATA_DELAY = 1000;
-
 const TOKEN_EXPIRES_STATUS_CODE = 401;
-
 let currentRefreshToken = '';
 
 //base api
@@ -42,7 +38,10 @@ api.interceptors.request.use(
   () => {},
 );
 
-//interceptors reponse
+/**
+ * This method is used to intercept the api calls and handle the api response in case of the
+ * access token failures and other technical issues that are relevant to the security of the system
+ */
 api.interceptors.response.use(
   response => {
     console.log('API RESPONSE', response.data);
@@ -177,6 +176,9 @@ api.interceptors.response.use(
   },
 );
 
+/**
+ * This method will get the new access token from the api
+ */
 const getNewAcceesToken = async () => {
   const startTime = new Date();
   if (!currentRefreshToken) {
@@ -186,10 +188,12 @@ const getNewAcceesToken = async () => {
     );
     return Promise.reject();
   }
+
   const refreshResponse = await axios.post(
     `${Config.BASE_URL}${API_URLS.AUTH.REFRESH_TOKEN}`,
     {refreshToken: currentRefreshToken},
   );
+
   const duration = new Date() - startTime;
   if (refreshResponse.status === 200) {
     addAccessToken(
@@ -203,6 +207,9 @@ const getNewAcceesToken = async () => {
   }
 };
 
+/**
+ * This method will add the access token to the local store and to the api calls
+ */
 const addAccessToken = (accessToken = '', refreshToken = '') => {
   if (accessToken) {
     api.defaults.headers.common.Authorization = `Bearer ${accessToken}`;

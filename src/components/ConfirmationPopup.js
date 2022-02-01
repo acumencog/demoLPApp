@@ -1,18 +1,17 @@
 import React, {useState, useCallback} from 'react';
 import PropTypes from 'prop-types';
-import {View, StyleSheet, Alert} from 'react-native';
+import {StyleSheet, Alert} from 'react-native';
 import Modal from 'react-native-modal';
 import COLORS from '../statics/colors';
-import {LPText, LPButton} from '.';
 
+/**
+ * This component is used to show the confirmation prompt and get the info
+ * from the user
+ * @param  props like onPressLeftBtn, onPressLRightBtn
+ * @return the component with prompt to get information from user
+ */
 const ConfirmationPopup = props => {
-  const {
-    message,
-    leftBtnText,
-    rightBtnText,
-    onPressLeftBtn,
-    onPressLRightBtn,
-  } = props;
+  const {onPressLeftBtn, onPressLRightBtn} = props;
   const [showPopup, setShowPopup] = useState(false);
 
   const onRightBtnPressed = useCallback(() => {

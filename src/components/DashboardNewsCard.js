@@ -12,6 +12,13 @@ const IMAGE_ASPECT_RATIO = 0.6;
 const SHADOW_PADDING = 15;
 const BORDER_RADIUS = 15;
 
+/**
+ * This component is used to display the News card and specific description about that news
+ * News can be of News, Community News, Social projects
+ *
+ * @param props like header, subHeader, imageUrl to show on this component
+ * @return component with the image, heading and description of the component
+ */
 const DashboardNewsCard = props => {
   const {
     id,
@@ -24,6 +31,9 @@ const DashboardNewsCard = props => {
     imageUrl,
   } = props;
 
+  const borderColor = isHighlighted ? COLORS.GORSE : COLORS.RUSSIAN_BLACK;
+
+  //Get the image, header, subHeader component information
   const getContent = () => (
     <View style={styles.imageContainer}>
       <SharedElement id={`image_${id}`} style={styles.sharedEl}>
@@ -54,8 +64,6 @@ const DashboardNewsCard = props => {
     x: 0,
     y: 0,
   };
-
-  const borderColor = isHighlighted ? COLORS.GORSE : COLORS.RUSSIAN_BLACK;
 
   return (
     <View style={[styles.container, customContainerClass]}>

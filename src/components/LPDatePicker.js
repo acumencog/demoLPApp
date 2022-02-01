@@ -11,6 +11,12 @@ import COLORS from '../statics/colors';
 import {dateFormatToString} from '../utils/CommonUtils';
 import {COMPONENT_STATICS} from './statics/ComponentStatics';
 
+/**
+ * This component is used to select the date and related component
+ *
+ * @param props like label, value, id, touched
+ * @return the date component with configuration of props
+ */
 const LPDatePicker = props => {
   const {
     id,

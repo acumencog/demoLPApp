@@ -6,6 +6,12 @@ import COLORS from '../statics/colors';
 import {OS} from '../statics/Enums';
 import LPButton from './LPButton';
 
+/**
+ * This component is used to show the checkbox with app specific style
+ *
+ * @param props label, value, setValueState, onChange, style
+ * @return checkbox with event information
+ */
 const LPCheckbox = props => {
   const {label, value, setValueState, onChange, style} = props;
 

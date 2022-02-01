@@ -10,7 +10,7 @@ import {LOADING_STATUS} from '../statics/Enums';
  * This method is used to customise and show the button on the UI using the props
  * We can handle the attributes like styles, gradient, on Press event button wrapping etc
  * @param {*} props used to customise the button
- * @return {*} returns the button with specified style and action.
+ * @return returns the button with specified style and action.
  */
 const LPButton = props => {
   const {
@@ -38,6 +38,7 @@ const LPButton = props => {
     onPress && onPress(callbackValues);
   }, [callbackValues, disabled, onPress]);
 
+  //Contains the gradient of the button
   const colorGradiantArray = useMemo(() => {
     if (disabled) {
       return colorGradiantArraySelected
@@ -49,6 +50,7 @@ const LPButton = props => {
       : [COLORS.VICTORIA, COLORS.BLUE_DARK];
   }, [colorGradiantArraySelected, colorGradiantArrayUSelected, disabled]);
 
+  //Get the button view with color type and if it include the children
   const getButtonView = () => (
     <LinearGradient
       colors={colorGradiantArray}
@@ -66,6 +68,7 @@ const LPButton = props => {
     </LinearGradient>
   );
 
+  //Get the textview of the button
   const getOnlyTextView = () => (
     <View style={styles.onlyTextContainer}>
       <Text style={[styles.onlyText, onlyTextStyle]}>{children}</Text>
@@ -82,6 +85,11 @@ const LPButton = props => {
     </LinearGradient>
   );
 
+  /**
+   * This method is used to return the button  with configuration
+   *
+   * @return the button with configurations
+   */
   const getContent = () => {
     if (onlyChild) {
       return children;

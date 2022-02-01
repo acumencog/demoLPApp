@@ -10,6 +10,14 @@ const SCREEN_WIDTH = Dimensions.get('window').width;
 const IMAGE_ASPECT_RATIO = 0.6;
 const BORDER_RADIUS = 10;
 
+/**
+ * This method is used show Small card on the dashboard, includes the three
+ * type of cards, News, Community News, Social Projects.
+ *
+ * @param {*} props like  id, width, height, header, imageUrl, subHeader, tickView
+ * are used to add effect on the small cards.
+ * @return  the card  with type of news or projects
+ */
 const DashboardNewsSmallCard = props => {
   const {id, width, height, header, imageUrl, subHeader, tickView} = props;
 
@@ -21,6 +29,7 @@ const DashboardNewsSmallCard = props => {
     </View>
   );
 
+  //Information view contains the information of the card
   const getInfoView = () => (
     <LinearGradient
       colors={[COLORS.TRANSPARENT, 'rgba(0, 0, 0, 0.6)']}

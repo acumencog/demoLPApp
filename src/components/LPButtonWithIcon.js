@@ -6,9 +6,9 @@ import COLORS from '../statics/colors';
 import Plus from '../assets/images/plus.svg';
 /**
  * This function is used to show the button with Icon
- *
- * @param {*} props
- * @return {*}
+ * @param  props disabled,noFeedback,children,customStyle,style,title,onlyTextStyle,    onPress,
+    callbackValues,colorGradiantArrayUSelected,colorGradiantArraySelected,buttonWrapper,showPlus
+ * @return button with configuration mentioned in the props
  */
 const LPButtonWithIcon = props => {
   const {
@@ -34,6 +34,7 @@ const LPButtonWithIcon = props => {
     onPress(callbackValues);
   }, [callbackValues, disabled, onPress]);
 
+  //Contains the gradient of the button
   const colorGradiantArray = useMemo(() => {
     if (disabled) {
       return colorGradiantArraySelected
@@ -45,6 +46,11 @@ const LPButtonWithIcon = props => {
       : [COLORS.CERISE_RED, COLORS.CERISE_RED_1, COLORS.CERISE_RED_2];
   }, [colorGradiantArraySelected, colorGradiantArrayUSelected, disabled]);
 
+  /**
+   * This method is used to return the button  with configuration
+   *
+   * @return the button with configurations
+   */
   const getButtonView = () => (
     <View style={styles.buttonContainer}>
       <LinearGradient

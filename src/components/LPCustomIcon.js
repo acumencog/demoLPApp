@@ -3,9 +3,14 @@ import PropTypes from 'prop-types';
 import {SvgXml} from 'react-native-svg';
 import SVG_ICONS from '../statics/SvgIcons';
 import COLORS from '../statics/colors';
-import {View, Text, StyleSheet} from 'react-native';
-import {useSelector} from 'react-redux';
+import {View, StyleSheet} from 'react-native';
 
+/**
+ * This component is used to display the svg based items those can be configured based on
+ * props that send to this component
+ * @param props  like iconName, size, color can be used to configure the component
+ * @return the icon which contains the svg icon
+ */
 const LPCustomIcon = props => {
   const {iconName, size, color} = props;
 
